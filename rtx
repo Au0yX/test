@@ -1,0 +1,352 @@
+-- Credit Im Patrick
+-- Instances:
+
+
+local NaturalDisaster = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Open = Instance.new("TextButton")
+local main = Instance.new("Frame")
+local Close = Instance.new("TextButton")
+local TextLabel3 = Instance.new("TextLabel")
+local TextLabel2 = Instance.new("TextLabel")
+local TextLabel1 = Instance.new("TextLabel")
+local TextLabel4 = Instance.new("TextLabel")
+local Gravity = Instance.new("TextButton")
+local Map = Instance.new("TextButton")
+local Damage = Instance.new("TextButton")
+local Lobby = Instance.new("TextButton")
+local Horror = Instance.new("TextButton")
+local v2 = Instance.new("TextButton")
+--Properties:
+NaturalDisaster.Name = "Natural Disaster"
+NaturalDisaster.Parent = game.CoreGui
+
+Frame.Parent = NaturalDisaster
+Frame.BackgroundColor3 = Color3.new(1, 1, 1)
+Frame.Position = UDim2.new(0.0101302462, 0, 0.482566237, 0)
+Frame.Size = UDim2.new(0, 103, 0, 36)
+Frame.Style = Enum.FrameStyle.DropShadow
+
+Open.Name = "Open"
+Open.Parent = Frame
+Open.BackgroundColor3 = Color3.new(0, 0, 0)
+Open.BackgroundTransparency = 0.89999997615814
+Open.Position = UDim2.new(0.0485436879, 0, -0.305555552, 0)
+Open.Size = UDim2.new(0, 79, 0, 30)
+Open.Font = Enum.Font.SciFi
+Open.Text = "RTX"
+Open.TextColor3 = Color3.new(1, 1, 1)
+Open.TextSize = 14
+Open.MouseButton1Down:connect(function()
+main.Visible = true
+Frame.Visible = false
+end)
+
+main.Name = "main"
+main.Parent = NaturalDisaster
+main.BackgroundColor3 = Color3.new(1, 1, 1)
+main.Position = UDim2.new(0.329479754, 0, 0.27573061, 0)
+main.Size = UDim2.new(0, 374, 0, 269)
+main.Style = Enum.FrameStyle.DropShadow
+main.Visible = false
+main.Active = true
+main.Draggable = true
+
+Close.Name = "Close"
+Close.Parent = main
+Close.BackgroundColor3 = Color3.new(0, 0, 0)
+Close.BackgroundTransparency = 0.5
+Close.Position = UDim2.new(0.954666674, 0, -0.0113636367, 0)
+Close.Size = UDim2.new(0, 19, 0, 16)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.new(0.333333, 1, 1)
+Close.TextSize = 14
+Close.MouseButton1Down:connect(function()
+Frame.Visible = true
+main.Visible = false
+end)
+
+TextLabel3.Name = "TextLabel3"
+TextLabel3.Parent = main
+TextLabel3.BackgroundColor3 = Color3.new(0, 0, 0)
+TextLabel3.BackgroundTransparency = 0.89999997615814
+TextLabel3.Position = UDim2.new(0.219038948, 0, 0.852558732, 0)
+TextLabel3.Size = UDim2.new(0, 200, 0, 17)
+TextLabel3.Font = Enum.Font.SourceSans
+TextLabel3.Text = ""
+TextLabel3.TextColor3 = Color3.new(1, 1, 0)
+TextLabel3.TextSize = 14
+
+TextLabel2.Name = "TextLabel2"
+TextLabel2.Parent = main
+TextLabel2.BackgroundColor3 = Color3.new(0, 0, 0)
+TextLabel2.BackgroundTransparency = 0.89999997615814
+TextLabel2.Position = UDim2.new(0.229946524, 0, 0.651079118, 0)
+TextLabel2.Size = UDim2.new(0, 200, 0, 18)
+TextLabel2.Font = Enum.Font.SourceSans
+TextLabel2.Text = ""
+TextLabel2.TextColor3 = Color3.new(1, 1, 0)
+TextLabel2.TextSize = 14
+
+TextLabel1.Name = "TextLabel1"
+TextLabel1.Parent = main
+TextLabel1.BackgroundColor3 = Color3.new(0, 0, 0)
+TextLabel1.BackgroundTransparency = 0.89999997615814
+TextLabel1.Position = UDim2.new(0.219060361, 0, 0.755531549, 0)
+TextLabel1.Size = UDim2.new(0, 200, 0, 17)
+TextLabel1.Font = Enum.Font.SourceSans
+TextLabel1.Text = "credit im patrick"
+TextLabel1.TextColor3 = Color3.new(1, 1, 0)
+TextLabel1.TextSize = 14
+
+TextLabel4.Name = "TextLabel4"
+TextLabel4.Parent = main
+TextLabel4.BackgroundColor3 = Color3.new(0, 0, 0)
+TextLabel4.BackgroundTransparency = 0.80000001192093
+TextLabel4.Position = UDim2.new(-0.00810807757, 0, -0.0105236284, 0)
+TextLabel4.Size = UDim2.new(0, 365, 0, 20)
+TextLabel4.Font = Enum.Font.SourceSans
+TextLabel4.Text = ""
+TextLabel4.TextColor3 = Color3.new(0, 1, 0)
+TextLabel4.TextSize = 14
+
+Gravity.Name = "Gravity"
+Gravity.Parent = main
+Gravity.BackgroundColor3 = Color3.new(0, 0, 0)
+Gravity.BackgroundTransparency = 0.5
+Gravity.Position = UDim2.new(-0.00323019363, 0, 0.41813767, 0)
+Gravity.Size = UDim2.new(0, 170, 0, 47)
+Gravity.Font = Enum.Font.SourceSans
+Gravity.Text = "Night"
+Gravity.TextColor3 = Color3.new(0, 1, 1)
+Gravity.TextSize = 14
+Gravity.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/MSZPFVfE",true))()
+end)
+
+Map.Name = "Map"
+Map.Parent = main
+Map.BackgroundColor3 = Color3.new(0, 0, 0)
+Map.BackgroundTransparency = 0.5
+Map.Position = UDim2.new(0.53741771, 0, 0.107225701, 0)
+Map.Size = UDim2.new(0, 170, 0, 47)
+Map.Font = Enum.Font.SourceSans
+Map.Text = "winter"
+Map.TextColor3 = Color3.new(0, 1, 1)
+Map.TextSize = 14
+Map.MouseButton1Click:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/KinYwgWN",true))()
+end)
+
+Damage.Name = "Damage"
+Damage.Parent = main
+Damage.BackgroundColor3 = Color3.new(0, 0, 0)
+Damage.BackgroundTransparency = 0.5
+Damage.Position = UDim2.new(-0.00590397418, 0, 0.107225701, 0)
+Damage.Size = UDim2.new(0, 170, 0, 47)
+Damage.Font = Enum.Font.SourceSans
+Damage.Text = "Afternoon"
+Damage.TextColor3 = Color3.new(0, 1, 1)
+Damage.TextSize = 14
+Damage.MouseButton1Click:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/3ux41n4q",true))()
+end)
+
+Lobby.Name = "Lobby"
+Lobby.Parent = main
+Lobby.BackgroundColor3 = Color3.new(0, 0, 0)
+Lobby.BackgroundTransparency = 0.5
+Lobby.Position = UDim2.new(0.53741765, 0, 0.41813767, 0)
+Lobby.Size = UDim2.new(0, 170, 0, 47)
+Lobby.Font = Enum.Font.SourceSans
+Lobby.Text = "Evening"
+Lobby.TextColor3 = Color3.new(0, 1, 1)
+Lobby.TextSize = 14
+Lobby.MouseButton1Click:connect(function()
+local Vignette = true -- change to false if you don't want a shadow frame
+
+
+
+local Lighting = game:GetService("Lighting")
+local StarterGui = game:GetService("StarterGui")
+local Bloom = Instance.new("BloomEffect")
+local Blur = Instance.new("BlurEffect")
+local ColorCor = Instance.new("ColorCorrectionEffect")
+local SunRays = Instance.new("SunRaysEffect")
+local Sky = Instance.new("Sky")
+local Atm = Instance.new("Atmosphere")
+
+
+for i, v in pairs(Lighting:GetChildren()) do
+	if v then
+		v:Destroy()
+	end
+end
+
+Bloom.Parent = Lighting
+Blur.Parent = Lighting
+ColorCor.Parent = Lighting
+SunRays.Parent = Lighting
+Sky.Parent = Lighting
+Atm.Parent = Lighting
+
+if Vignette == true then
+	local Gui = Instance.new("ScreenGui")
+	Gui.Parent = StarterGui
+	Gui.IgnoreGuiInset = true
+	
+	local ShadowFrame = Instance.new("ImageLabel")
+	ShadowFrame.Parent = Gui
+	ShadowFrame.AnchorPoint = Vector2.new(0.5,1)
+	ShadowFrame.Position = UDim2.new(0.5,0,1,0)
+	ShadowFrame.Size = UDim2.new(1,0,1.05,0)
+	ShadowFrame.BackgroundTransparency = 1
+	ShadowFrame.Image = "rbxassetid://4576475446"
+	ShadowFrame.ImageTransparency = 0.3
+	ShadowFrame.ZIndex = 10
+end
+
+Bloom.Intensity = 0.3
+Bloom.Size = 10
+Bloom.Threshold = 0.8
+
+Blur.Size = 5
+
+ColorCor.Brightness = 0.1
+ColorCor.Contrast = 0.5
+ColorCor.Saturation = -0.3
+ColorCor.TintColor = Color3.fromRGB(255, 235, 203)
+
+SunRays.Intensity = 0.075
+SunRays.Spread = 0.727
+
+Sky.SkyboxBk = "http://www.roblox.com/asset/?id=151165214"
+Sky.SkyboxDn = "http://www.roblox.com/asset/?id=151165197"
+Sky.SkyboxFt = "http://www.roblox.com/asset/?id=151165224"
+Sky.SkyboxLf = "http://www.roblox.com/asset/?id=151165191"
+Sky.SkyboxRt = "http://www.roblox.com/asset/?id=151165206"
+Sky.SkyboxUp = "http://www.roblox.com/asset/?id=151165227"
+Sky.SunAngularSize = 10
+
+Lighting.Ambient = Color3.fromRGB(2,2,2)
+Lighting.Brightness = 2.25
+Lighting.ColorShift_Bottom = Color3.fromRGB(0,0,0)
+Lighting.ColorShift_Top = Color3.fromRGB(0,0,0)
+Lighting.EnvironmentDiffuseScale = 0.2
+Lighting.EnvironmentSpecularScale = 0.2
+Lighting.GlobalShadows = true
+Lighting.OutdoorAmbient = Color3.fromRGB(0,0,0)
+Lighting.ShadowSoftness = 0.2
+Lighting.ClockTime = 17
+Lighting.GeographicLatitude = 45
+Lighting.ExposureCompensation = 0.5
+
+Atm.Density = 0.364
+Atm.Offset = 0.556
+Atm.Color = Color3.fromRGB(199, 175, 166)
+Atm.Decay = Color3.fromRGB(44, 39, 33)
+Atm.Glare = 0.36
+Atm.Haze = 1.72
+end)
+
+
+Horror.Name = "Horror"
+Horror.Parent = main
+Horror.BackgroundColor3 = Color3.new(0, 0, 0)
+Horror.BackgroundTransparency = 0.5
+Horror.Position = UDim2.new(0.219038948, 0, 0.852558732, 0)
+Horror.Size = UDim2.new(0, 170, 0, 47)
+Horror.Font = Enum.Font.SourceSans
+Horror.Text = "Horror"
+Horror.TextColor3 = Color3.new(0, 1, 1)
+Horror.TextSize = 14
+Horror.MouseButton1Click:connect(function()
+game.Lighting.ClockTime = 19
+
+local Lighting = game:GetService("Lighting")
+local StarterGui = game:GetService("StarterGui")
+local Bloom = Instance.new("BloomEffect")
+local Blur = Instance.new("BlurEffect")
+local ColorCor = Instance.new("ColorCorrectionEffect")
+local SunRays = Instance.new("SunRaysEffect")
+local Sky = Instance.new("Sky")
+local Atm = Instance.new("Atmosphere")
+local Gui = Instance.new("ScreenGui")
+local ShadowFrame = Instance.new("ImageLabel")
+
+for i, v in pairs(Lighting:GetChildren()) do
+	if v then
+		v:Destroy()
+	end
+end
+
+Bloom.Parent = Lighting
+Blur.Parent = Lighting
+ColorCor.Parent = Lighting
+SunRays.Parent = Lighting
+Sky.Parent = Lighting
+Atm.Parent = Lighting
+Gui.Parent = StarterGui
+ShadowFrame.Parent = Gui
+
+Bloom.Intensity = 0.05
+Bloom.Size = 17
+Bloom.Threshold = 0.1
+
+Blur.Size = 2
+
+ColorCor.Brightness = 0.1
+ColorCor.Contrast = 0.0
+ColorCor.Saturation = 0.0
+ColorCor.TintColor = Color3.fromRGB(27, 42, 53)
+
+SunRays.Intensity = 0.08
+SunRays.Spread = 0.728
+
+
+Sky.SunAngularSize = 21
+
+Lighting.Ambient = Color3.fromRGB(106,106,106)
+Lighting.Brightness = 0.2
+Lighting.ColorShift_Bottom = Color3.fromRGB(0,0,0)
+Lighting.ColorShift_Top = Color3.fromRGB(0,0,0)
+Lighting.EnvironmentDiffuseScale = 0.2
+Lighting.EnvironmentSpecularScale = 0.2
+Lighting.GlobalShadows = true
+Lighting.OutdoorAmbient = Color3.fromRGB(0,0,0)
+Lighting.ShadowSoftness = 0
+
+
+Lighting.GeographicLatitude = 45
+Lighting.ExposureCompensation = 0.5
+
+Atm.Density = 0.733
+Atm.Offset = 0.217
+Atm.Color = Color3.fromRGB(109, 110, 108)
+Atm.Decay = Color3.fromRGB(27, 42, 53)
+Atm.Glare = 0.45
+Atm.Haze = 1.72
+
+ShadowFrame.AnchorPoint = Vector2.new(0.5,1)
+ShadowFrame.Position = UDim2.new(0.5,0,1,0)
+ShadowFrame.Size = UDim2.new(1,0,1.05,0)
+ShadowFrame.BackgroundTransparency = 1
+ShadowFrame.Image = "rbxassetid://4576475446"
+ShadowFrame.ImageTransparency = 0.3
+end)
+
+
+v2.Name = "v2"
+v2.Parent = main
+v2.BackgroundColor3 = Color3.new(0, 0, 0)
+v2.BackgroundTransparency = 0.5
+v2.Position = UDim2.new(0.229946524, 0, 0.651079118, 0)
+v2.Size = UDim2.new(0, 170, 0, 47)
+v2.Font = Enum.Font.SourceSans
+v2.Text = "NEW RTX"
+v2.TextColor3 = Color3.new(0, 1, 1)
+v2.TextSize = 14
+v2.MouseButton1Click:connect(function()
+loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\112\97\115\116\101\102\121\46\103\97\47\110\106\121\80\48\80\77\49\47\114\97\119\39\41\44\116\114\117\101\41\41\40\41\10")()
+end)
