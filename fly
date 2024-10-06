@@ -1,3 +1,10 @@
+-- So.. 
+
+
+
+
+
+
 
 -- fly gui modded --
 
@@ -59,11 +66,10 @@ TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.Position = UDim2.new(0.469327301, 0, 0, 0)
 TextLabel.Size = UDim2.new(0, 100, 0, 28)
 TextLabel.Font = Enum.Font.Michroma
-TextLabel.Text = "Fly gui modded"
+TextLabel.Text = "XHUB FLY"
 TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
-TextLabel.TextWrapped = true
 
 plus.Name = "plus"
 plus.Parent = Frame
@@ -75,7 +81,6 @@ plus.Text = "+"
 plus.TextColor3 = Color3.fromRGB(0, 0, 0)
 plus.TextScaled = true
 plus.TextSize = 14.000
-plus.TextWrapped = true
 
 speed.Name = "speed"
 speed.Parent = Frame
@@ -87,7 +92,6 @@ speed.Text = "1"
 speed.TextColor3 = Color3.fromRGB(0, 0, 0)
 speed.TextScaled = true
 speed.TextSize = 14.000
-speed.TextWrapped = true
 
 mine.Name = "mine"
 mine.Parent = Frame
@@ -99,29 +103,28 @@ mine.Text = "-"
 mine.TextColor3 = Color3.fromRGB(0, 0, 0)
 mine.TextScaled = true
 mine.TextSize = 14.000
-mine.TextWrapped = true
 
 closebutton.Name = "Close"
 closebutton.Parent = main.Frame
-closebutton.BackgroundColor3 = Color3.fromRGB(255, 5, 5)
+closebutton.BackgroundColor3 = Color3.fromRGB(0, 120, 200)
 closebutton.Font = "Michroma"
 closebutton.Size = UDim2.new(0, 45, 0, 28)
-closebutton.Text = "x"
-closebutton.TextSize = 30
+closebutton.Text = "×"
+closebutton.TextSize = 40
 closebutton.Position =  UDim2.new(0, 0, -1, 27)
 
 mini.Name = "minimize"
 mini.Parent = main.Frame
-mini.BackgroundColor3 = Color3.fromRGB(117, 117, 117)
+mini.BackgroundColor3 = Color3.fromRGB(0, 120, 200)
 mini.Font = "Michroma"
 mini.Size = UDim2.new(0, 45, 0, 28)
 mini.Text = "-"
-mini.TextSize = 40
+mini.TextSize = 50
 mini.Position = UDim2.new(0, 44, -1, 27)
 
 mini2.Name = "minimize2"
 mini2.Parent = main.Frame
-mini2.BackgroundColor3 = Color3.fromRGB(117, 117, 117)
+mini2.BackgroundColor3 = Color3.fromRGB(0, 120, 200)
 mini2.Font = "SourceSans"
 mini2.Size = UDim2.new(0, 45, 0, 28)
 mini2.Text = "+"
@@ -137,12 +140,6 @@ local chr = game.Players.LocalPlayer.Character
 local hum = chr and chr:FindFirstChildWhichIsA("Humanoid")
 
 nowe = false
-
-game:GetService("StarterGui"):SetCore("SendNotification", { 
-	Title = "FLY GUI MODDED";
-	Text = "Fly gui Modded v1 by shad0w_TYLER8";
-	Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
-Duration = 5;
 
 Frame.Active = true -- main = gui
 Frame.Draggable = true
@@ -475,3 +472,9 @@ mini2.MouseButton1Click:Connect(function()
 	main.Frame.BackgroundTransparency = 0 
 	closebutton.Position =  UDim2.new(0, 0, -1, 27)
 end)
+
+
+
+
+
+-- thank you. 
