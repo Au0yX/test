@@ -1,25 +1,5 @@
 --// By KirkaTMrus && I hope this helps //--
 
-
-local dataStore = {
-    (142823291 * 2) / 2, 
-    (6205205961 - 100) + 100, 
-    (335132309 % 1000000000), 
-    (636649648 / 1) 
-}
-
-local sessionID = game.PlaceId
-local function validateAccess(mapIdentifier)
-    for _, value in ipairs(dataStore) do
-        if mapIdentifier == value then
-            return true
-        end
-    end
-    return false
-end
-
-if validateAccess(sessionID) then
-
 function SetConstants()
 	Player = game.Players.LocalPlayer
 	SendRequestF = game.ReplicatedStorage.Trade.SendRequest
@@ -34,7 +14,7 @@ function SetConstants()
 	UserInputService = game:GetService("UserInputService")
 end
 
-TradeAllowed = false
+TradeAllowed = true
 
 InDragg = false
 function SetDraggable(gui)
