@@ -1,0 +1,17 @@
+return {
+    {
+        VIPuser = 12951775789,
+        Username = "Play",
+        HWID = "NG"
+    },
+    {
+        VIPuser = NG,
+        Username = "Gameover_s0",
+        HWID = "NG"
+    },
+    {
+        VIPuser = "NG",
+        Username = "jxw85",
+        HWID = "NG"
+    }
+}
